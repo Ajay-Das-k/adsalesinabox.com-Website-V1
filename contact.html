@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <meta name="generator" content="">
+   <title>KatManDo Home Page</title>
+   <link rel="icon" type="image/x-icon" href="mg/OIFIRO2.png">
+   <!--    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
+   <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+   <!-- Bootstrap JavaScript (For the collapse functionality to work) -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<style>
+   .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+   }
+
+   @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+         font-size: 3.5rem;
+      }
+   }
+
+   .error-msg {
+      display: none;
+      color: red;
+      font-size: 0.9rem;
+   }
+
+   .form-control:invalid:hover~.error-msg {
+      display: block;
+   }
+
+   .form-control:valid~.error-msg {
+      display: none;
+   }
+
+   #submit-button {
+      display: none;
+      /* Hidden by default */
+   }
+</style>
+
+
+   <!-- Custom styles for this template -->
+   <link href="./style.css" rel="stylesheet">
+   <!-- Font for this template -->
+   <link href="./assets/fonts/stylesheet.css" rel="stylesheet">
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-R33N9WW06C"></script>
+
+</head>
+
+<body>
+
+   <header>
+      <nav class="navbar navbar-expand-lg bg-light fixed-top navbar-light px-4 px-lg-5 py-3 py-lg-0">
+         <a href="index.html" class="navbar-brand p-3 d-flex align-items-center">
+            <img src="img/OIFIRO2.png" alt="KatManDo Logo" class="img-fluid" style="height: 50px;">
+            <h1 class="display-6 text-primary m-0 ms-2">KatManDo</h1>
+         </a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa fa-bars"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+               <a href="index.html" class="nav-item nav-link ">Home</a>
+               <a href="https://crmantra.com/about-us/" class="nav-item nav-link " target="_blank">About</a>
+               <a href="privacyPolicy.html" class="nav-item nav-link ">Privacy Policy</a>
+               <a href="termsofService.html" class="nav-item nav-link ">Terms of Service</a>
+               <a href="https://crmantra.com/" class="btn  btn-outline-danger rounded-pill ">CRMantra</a>
+            </div>
+         </div>
+      </nav>
+   </header>
+
+   <main>
+      <!-- contact form -->
+      <div class="container-fluid contact py-5">
+         <div class="container py-5">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 900px;">
+               <h4 class="text-primary mb-4">Contact Us</h4>
+               <h1 class="display-5 mb-4">Get In Touch With Us</h1>
+               <p class="mb-0">We are here to help! Whether you have questions, need assistance with our products, or want
+                  to share feedback, our team
+                  is ready to assist you. Feel free to reach out via the contact form, email, or phone, and we'll get back
+                  to you as soon
+                  as possible. Your inquiries are important to us, and we're committed to providing the support you need.
+               </p>
+            </div>
+            <div class="row g-5 align-items-center">
+               <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+                 
+   <form id="submit-form" action="">
+      <div id="errormessage"></div>
+      <div class="row g-3">
+         <div class="col-lg-12 col-xl-6">
+            <div class="form-floating">
+               <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+               <label for="name">Your Name</label>
+               <span class="error-msg" id="name-error">Name is required</span>
+            </div>
+         </div>
+         <div class="col-lg-12 col-xl-6">
+            <div class="form-floating">
+               <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+               <label for="email">Your Email</label>
+               <span class="error-msg" id="email-error">Enter a valid email address</span>
+            </div>
+         </div>
+         <div class="col-lg-12 col-xl-6">
+            <div class="form-floating">
+               <input type="text" class="form-control" id="company" name="company" placeholder="Your Company" required>
+               <label for="company">Your Company</label>
+               <span class="error-msg" id="company-error">Company is required</span>
+            </div>
+         </div>
+         <div class="col-12">
+            <div class="form-floating">
+               <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+               <label for="subject">Subject</label>
+               <span class="error-msg" id="subject-error">Subject is required</span>
+            </div>
+         </div>
+         <div class="col-12">
+            <div class="form-floating">
+               <textarea class="form-control" placeholder="Leave a message here" id="message" name="message" required
+                  style="height: 160px"></textarea>
+               <label for="message">Message</label>
+               <span class="error-msg" id="message-error">Message is required</span>
+            </div>
+         </div>
+         <div class="col-12">
+            <button type="submit" class="btn btn-primary w-100 py-3" id="submit-button">Send Message</button>
+         </div>
+      </div>
+   </form>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+               </div>
+               <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+                  <div class="d-flex align-items-center mb-4">
+                     <div class="bg-light d-flex align-items-center justify-content-center mb-3"
+                        style="width: 90px; height: 90px; border-radius: 50px;"><i class="fa fa-home fa-2x text-primary"></i>
+                     </div>
+                     <div class="ms-4">
+                        <h4>Cleveland</h4>
+                        <p class="mb-0">3401 Enterprise Parkway, Suite 340, Beachwood OH 44122</p>
+                     </div>
+                  </div>
+                  <div class="d-flex align-items-center mb-4">
+                     <div class="bg-light d-flex align-items-center justify-content-center mb-3"
+                        style="width: 90px; height: 90px; border-radius: 50px;"><i
+                           class="fa fa-map-marker-alt fa-2x text-primary"></i></div>
+                     <div class="ms-4">
+                        <h4>Kochi</h4>
+                        <p class="mb-0">Centre A, Alapatt Heritage Building, MG Road, Kochi 682 035, Kerala, India</p>
+                     </div>
+                  </div>
+                  <!-- <div class="d-flex align-items-center mb-4">
+                     <div class="bg-light d-flex align-items-center justify-content-center mb-3"
+                        style="width: 90px; height: 90px; border-radius: 50px;"><i
+                           class="fa fa-phone-alt fa-2x text-primary"></i></div>
+                     <div class="ms-4">
+                        <h4>Mobile</h4>
+                        <p class="mb-0"><a href="tel:+14158399672">+1 415 839 9672 (US)</a></p>
+                        <p class="mb-0"><a href="tel:+914844148135">+91 484 414 8135 (India)</a></p>
+                     </div>
+                  </div> -->
+                  <div class="d-flex align-items-center mb-4">
+                     <div class="bg-light d-flex align-items-center justify-content-center mb-3"
+                        style="width: 90px; height: 90px; border-radius: 50px;"><i
+                           class="fa fa-envelope-open fa-2x text-primary"></i></div>
+                     <div class="ms-4">
+                        <h4>Email</h4>
+                        <p class="mb-0"><a href="mailto:contact-us@crmantra.com">contact-us@crmantra.com</a></p>
+                     </div>
+                  </div>
+                  <div class="d-flex align-items-center">
+                     <div class="me-4">
+                        <div class="bg-light d-flex align-items-center justify-content-center"
+                           style="width: 90px; height: 90px; border-radius: 50px;"><i
+                              class="fas fa-share fa-2x text-primary"></i></div>
+                     </div>
+                     <div class="d-flex">
+                        <a class="btn btn-lg-square btn-primary rounded-circle me-2" target="_blank"
+                           href="https://www.facebook.com/crmantra/">
+                           <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <!-- <a class="btn btn-lg-square btn-primary rounded-circle mx-2" target="_blank"
+                           href="https://x.com/i/flow/login?redirect_after_login=%2Fcrmantra">
+                           <i class="fab fa-twitter"></i>
+                        </a> -->
+                        <a class="btn btn-lg-square btn-primary rounded-circle mx-2" target="_blank"
+                           href="https://www.linkedin.com/company/crmantra">
+                           <i class="fab fa-linkedin-in"></i>
+                        </a>
+      
+                     </div>
+                  </div>
+               </div>
+               <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
+                  <div class="rounded h-100">
+                     <iframe class="rounded w-100" style="height: 500px;"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.3920192230853!2d76.27911827503095!3d9.984440290120176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d000c6887c5%3A0x592b4d2f6c81f045!2sCRMantra%20Technologies%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1725517114486!5m2!1sen!2sin"
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </main>
+      <script
+         type="text/javascript">window.$crisp = []; window.CRISP_WEBSITE_ID = "773b152f-5abe-4e87-9a17-b033c971b016"; (function () { d = document; s = d.createElement("script"); s.src = "https://client.crisp.chat/l.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })();</script>
+      <footer>
+   <div class="med-footer-bg mt-5">
+      <div class="container">
+         <footer class="py-3">
+            <div class=" border-bottom py-2">
+               <div class="row">
+                  <div class="col-lg-2 brandFooter">
+                     <a class="navbar-brand" href="/index.html"><img src="img/LT-navy-blue white.png"
+                           style="height: 20px;" /></a>
+                  </div>
+                  <div class="col-lg-8">
+                     <ul class="nav justify-content-center mb-3">
+                        <li class="nav-item"><a href="https://crmantra.com/about-us/" class="nav-link px-2 text-light" target="_blank">About Us</a>
+                        </li>
+                        <li class="nav-item"><a href="./termsofService.html" class="nav-link px-2 text-light">Terms &
+                              Conditions</a></li>
+                        <li class="nav-item"><a href="./privacyPolicy.html" class="nav-link px-2 text-light">Privacy
+                              Policy</a></li>
+                        <li class="nav-item"><a href="./contact.html" class="nav-link px-2 text-light">Contact
+                              Us</a></li>
+   
+   
+                     </ul>
+                  </div>
+                  <div class="col-lg-2">
+                     <ul class="justify-content-end med-justify-content-center  list-unstyled d-flex">
+                      
+                        <li class="ms-3 social-icons"><a class="text-muted"
+                              href="https://www.linkedin.com/company/crmantra/"><img
+                                 src="img/socialIcons/linkedin-in-brands.svg" height="15" /></a></li>
+   
+   
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <a href="https://crmantra.com/" target="_blank">
+               <p class="text-center text-light text-copyRight  py-4">&copy; 2024 CRMantra Inc</p>
+            </a>
+   
+         </footer>
+      </div>
+   </div>
+      </footer>
+
+
+
+
+   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="/script.js"></script>
+<script>
+   const form = document.getElementById("submit-form");
+   const submitButton = document.getElementById("submit-button");
+
+   // Function to validate email
+   function validateEmail(email) {
+      const re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+      return re.test(String(email).toLowerCase());
+   }
+
+   // Function to check if all fields are valid
+   function validateForm() {
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const company = document.getElementById("company").value.trim();
+      const subject = document.getElementById("subject").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      let isFormValid = true;
+
+      if (!name) {
+         isFormValid = false;
+      }
+
+      if (!validateEmail(email)) {
+         isFormValid = false;
+      }
+
+      if (!company) {
+         isFormValid = false;
+      }
+
+      if (!subject) {
+         isFormValid = false;
+      }
+
+      if (!message) {
+         isFormValid = false;
+      }
+
+      return isFormValid;
+   }
+
+   // Check if form is valid and toggle button visibility
+   form.addEventListener('input', () => {
+      if (validateForm()) {
+         submitButton.style.display = 'block';  // Show the button
+      } else {
+         submitButton.style.display = 'none';  // Hide the button
+      }
+   });
+
+   form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      if (validateForm()) {
+         $.ajax({
+            url: "https://script.google.com/macros/s/AKfycbxNsfluT3UVqpijanpvc5C8YyitU3pyvmr2rf2KgooKvStfgFkAyRGuWu-8YqqIjlGj/exec",
+            data: $("#submit-form").serialize(),
+            method: "post",
+            success: function (response) {
+               alert("Form submitted successfully");
+               window.location.reload();
+               window.location.href = "index.html";
+            },
+            error: function (err) {
+               alert("Something went wrong");
+            }
+         });
+      } else {
+         alert("Please fill all fields correctly.");
+      }
+   });
+</script>
+</body>
+
+</html>

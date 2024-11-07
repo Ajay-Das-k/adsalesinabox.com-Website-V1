@@ -1,0 +1,658 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <meta name="generator" content="">
+   <title>KatManDo Home Page</title>
+   <link rel="icon" type="image/x-icon" href="mg/OIFIRO2.png">
+   <!--    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
+   <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+   <!-- Bootstrap JavaScript (For the collapse functionality to work) -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+   <style>
+      .bd-placeholder-img {
+         font-size: 1.125rem;
+         text-anchor: middle;
+         -webkit-user-select: none;
+         -moz-user-select: none;
+         user-select: none;
+      }
+
+      @media (min-width: 768px) {
+         .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+         }
+      }
+      #team {
+    background: #eee !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #108d6f;
+    border-color: #108d6f;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007b5e;
+    border-color: #007b5e;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#team .card {
+    border: none;
+    background: #ffffff;
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+    min-height: 312px;
+}
+
+.backside .card a {
+    font-size: 18px;
+    color: #007b5e !important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #007b5e !important;
+}
+
+.frontside .card .card-body img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+   </style>
+
+
+   <!-- Custom styles for this template -->
+   <link href="./style.css" rel="stylesheet">
+   <!-- Font for this template -->
+   <link href="./assets/fonts/stylesheet.css" rel="stylesheet">
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-R33N9WW06C"></script>
+
+</head>
+
+<body>
+
+   <header>
+      <nav class="navbar navbar-expand-lg bg-light fixed-top navbar-light px-4 px-lg-5 py-3 py-lg-0">
+         <a href="index.html" class="navbar-brand p-3 d-flex align-items-center">
+            <img src="img/OIFIRO2.png" alt="KatManDo Logo" class="img-fluid" style="height: 50px;">
+            <h1 class="display-6 text-primary m-0 ms-2">KatManDo</h1>
+         </a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa fa-bars"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+               <a href="index.html" class="nav-item nav-link ">Home</a>
+               <a href="about.html" class="nav-item nav-link active">About</a>
+               <a href="privacyPolicy.html" class="nav-item nav-link">Privacy Policy</a>
+               <a href="termsofService.html" class="nav-item nav-link">Terms of Service</a>
+               <a href="#" class="btn  btn-outline-danger rounded-pill ">CRMantra</a>
+            </div>
+         </div>
+      </nav>  
+   </header>
+   <main>
+<div class="container">
+   <div class="row g-5 pt-5" style="margin-top: 1rem;">
+      <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+         <div class="feature-img RotateMoveLeft h-100" >
+            <img src="img/5970189.png" class="w-100 h-100" alt="">
+         </div>
+      </div>
+      <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.1s">
+       
+
+     
+
+
+            <div class="row  ">
+               <div class="mt-3">
+                  <div class="d-flex">
+                    
+                     <div class="d-flex flex-column ms-3">
+                        <h2 class="mb-0 fw-bold med-text med-service-header">CRMantra: Experts in CRM, CPQ, and CLM</h2>
+                        <p class="med-service-text">We are a curious and dedicated team of consultants, engineers, solution architects, developers and managers. During our
+                        previous lives working as product managers, engineers, and sales reps for Siebel (now part of Oracle) we have seen
+                        customers struggle to implement complex software and the associated change management. We founded the company to make a
+                        difference.
+                        Since our founding we have been the go-to guys to fix implementations gone awry. This applies to implementations of CRM
+                        Sales and Service, CPQ (Configure, Price & Quote) and CLM (Contract Lifecycle Management). Our reputation as the
+                        top-notch specialists has led many customers to call upon us to get it right the first time.</p>
+
+                        <!-- <h2 class="mb-0 fw-bold med-text med-service-header">KatManDo: Turbocharge Your Catalog Management</h2>
+                        <p class="med-service-text">We are a curious and dedicated team of consultants, engineers, solution architects, developers and managers. During our
+                        previous lives working as product managers, engineers, and sales reps for Siebel (now part of Oracle) we have seen
+                        customers struggle to implement complex software and the associated change management. We founded the company to make a
+                        difference.
+                        Since our founding we have been the go-to guys to fix implementations gone awry. This applies to implementations of CRM
+                        Sales and Service, CPQ (Configure, Price & Quote) and CLM (Contract Lifecycle Management). Our reputation as the
+                        top-notch specialists has led many customers to call upon us to get it right the first time.</p> -->
+                     </div>
+                  </div>
+               </div>
+          
+            </div>
+          
+            <div class="my-4 ">
+               <a href="contact.html" class="btn btn-primary rounded-pill py-3 px-5">Contact us</a>
+            </div>
+      </div>
+   </div>
+
+</div>
+    
+         <div class="container mt-5">
+            <h5 class="section-title h1 m-3">OUR TEAM</h5>
+            <div class="row">
+               <!-- Team member -->
+               <div class="col-xs-12 col-sm-6 col-md-4">
+                  <div class="image-flip">
+                     <div class="mainflip flip-0">
+                        <div class="frontside">
+                           <div class="card">
+                              <div class="card-body text-center">
+                                 <p><img class=" img-fluid"
+                                       src="img/photo/bio-2.jfif"
+                                       alt="card image"></p>
+                                 <h4 class="card-title">Amit Garg</h4>
+                                 <p class="card-text">Founder and CEO</p>
+                                 <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i
+                                       class="fa fa-plus"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="backside">
+                           <div class="card">
+                              <div class="card-body text-center mt-4">
+                                 <h4 class="card-title">Amit Garg</h4>
+                                 <p class="card-text">Amit has led CRMantra since its founding. He has been instrumental in over 100 successful digital transformation
+                                 initiatives...</p>
+                                 <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                       <a class="social-icon text-xs-center" target="_blank"
+                                          href="https://www.fiverr.com/share/qb8D02">
+                                          <i class="fa fa-facebook"></i>
+                                       </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                       <a class="social-icon text-xs-center" target="_blank"
+                                          href="https://www.fiverr.com/share/qb8D02">
+                                          <i class="fa fa-twitter"></i>
+                                       </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                       <a class="social-icon text-xs-center" target="_blank"
+                                          href="https://www.fiverr.com/share/qb8D02">
+                                          <i class="fa fa-skype"></i>
+                                       </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                       <a class="social-icon text-xs-center" target="_blank"
+                                          href="https://www.fiverr.com/share/qb8D02">
+                                          <i class="fa fa-google"></i>
+                                       </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- ./Team member -->
+               <!-- Team member -->
+               <div class="col-xs-12 col-sm-6 col-md-4">
+                  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                     <div class="mainflip">
+                        <div class="frontside">
+                           <div class="card">
+                              <div class="card-body text-center">
+                                 <p><img class=" img-fluid"
+                                       src="img/photo/Harish-2.jpg"
+                                       alt="card image"></p>
+                                 <h4 class="card-title">Harish Kumar</h4>
+                                 <p class="card-text">Director, India Operations & CRM Architect.</p>
+                                 <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i
+                                       class="fa fa-plus"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="backside">
+                           <div class="card">
+                              <div class="card-body text-center mt-4">
+                                 <h4 class="card-title">Harish Kumar</h4>
+                                 <p class="card-text">Harish has successfully engaged with customers as a Technology Advisor and Architect to enable their vision and strategy
+                                 for digital transformation..</p>
+                                 <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                       <a class="social-icon text-xs-center" target="_blank"
+                                          href="https://www.fiverr.com/share/qb8D02">
+                                          <i class="fa fa-facebook"></i>
+                                       </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                       <a class="social-icon text-xs-center" target="_blank"
+                                          href="https://www.fiverr.com/share/qb8D02">
+                                          <i class="fa fa-twitter"></i>
+                                       </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                       <a class="social-icon text-xs-center" target="_blank"
+                                          href="https://www.fiverr.com/share/qb8D02">
+                                          <i class="fa fa-skype"></i>
+                                       </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                       <a class="social-icon text-xs-center" target="_blank"
+                                          href="https://www.fiverr.com/share/qb8D02">
+                                          <i class="fa fa-google"></i>
+                                       </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- ./Team member -->
+               <!-- Team member -->
+               <div class="col-xs-12 col-sm-6 col-md-4">
+                  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                     <div class="mainflip">
+                        <div class="frontside">
+                           <div class="card">
+                              <div class="card-body text-center">
+                                 <p><img class=" img-fluid"
+                                       src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_03.png"
+                                       alt="card image"></p>
+                                 <h4 class="card-title">Sunlimetech</h4>
+                                 <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                                 <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i
+                                       class="fa fa-plus"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="backside">
+                           <div class="card">
+                              <div class="card-body text-center mt-4">
+                                 <h4 class="card-title">Sunlimetech</h4>
+                                 <p class="card-text">This is basic card with image on top, title, description and button.This
+                                    is basic card with image on top, title, description and button.This is basic card with
+                                    image on top, title, description and button.</p>
+                                 <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                       <a class="social-icon text-xs-center" target="_blank"
+                                          href="https://www.fiverr.com/share/qb8D02">
+                                          <i class="fa fa-facebook"></i>
+                                       </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                       <a class="social-icon text-xs-center" target="_blank"
+                                          href="https://www.fiverr.com/share/qb8D02">
+                                          <i class="fa fa-twitter"></i>
+                                       </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                       <a class="social-icon text-xs-center" target="_blank"
+                                          href="https://www.fiverr.com/share/qb8D02">
+                                          <i class="fa fa-skype"></i>
+                                       </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                       <a class="social-icon text-xs-center" target="_blank"
+                                          href="https://www.fiverr.com/share/qb8D02">
+                                          <i class="fa fa-google"></i>
+                                       </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- ./Team member -->
+               <!-- Team member -->
+               <div class="col-xs-12 col-sm-6 col-md-4">
+                  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                     <div class="mainflip">
+                        <div class="frontside">
+                           <div class="card">
+                              <div class="card-body text-center">
+                                 <p><img class=" img-fluid"
+                                       src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_04.jpg"
+                                       alt="card image"></p>
+                                 <h4 class="card-title">Sunlimetech</h4>
+                                 <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                                 <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i
+                                       class="fa fa-plus"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="backside">
+                           <div class="card">
+                              <div class="card-body text-center mt-4">
+                                 <h4 class="card-title">Sunlimetech</h4>
+                                 <p class="card-text">This is basic card with image on top, title, description and button.This
+                                    is basic card with image on top, title, description and button.This is basic card with
+                                    image on top, title, description and button.</p>
+                                 <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                       <a class="social-icon text-xs-center" target="_blank"
+                                          href="https://www.fiverr.com/share/qb8D02">
+                                          <i class="fa fa-facebook"></i>
+                                       </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                       <a class="social-icon text-xs-center" target="_blank"
+                                          href="https://www.fiverr.com/share/qb8D02">
+                                          <i class="fa fa-twitter"></i>
+                                       </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                       <a class="social-icon text-xs-center" target="_blank"
+                                          href="https://www.fiverr.com/share/qb8D02">
+                                          <i class="fa fa-skype"></i>
+                                       </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                       <a class="social-icon text-xs-center" target="_blank"
+                                          href="https://www.fiverr.com/share/qb8D02">
+                                          <i class="fa fa-google"></i>
+                                       </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- ./Team member -->
+               <!-- Team member -->
+               <div class="col-xs-12 col-sm-6 col-md-4">
+                  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                     <div class="mainflip">
+                        <div class="frontside">
+                           <div class="card">
+                              <div class="card-body text-center">
+                                 <p><img class=" img-fluid"
+                                       src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_05.png"
+                                       alt="card image"></p>
+                                 <h4 class="card-title">Sunlimetech</h4>
+                                 <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                                 <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i
+                                       class="fa fa-plus"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="backside">
+                           <div class="card">
+                              <div class="card-body text-center mt-4">
+                                 <h4 class="card-title">Sunlimetech</h4>
+                                 <p class="card-text">This is basic card with image on top, title, description and button.This
+                                    is basic card with image on top, title, description and button.This is basic card with
+                                    image on top, title, description and button.</p>
+                                 <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                       <a class="social-icon text-xs-center" target="_blank"
+                                          href="https://www.fiverr.com/share/qb8D02">
+                                          <i class="fa fa-facebook"></i>
+                                       </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                       <a class="social-icon text-xs-center" target="_blank"
+                                          href="https://www.fiverr.com/share/qb8D02">
+                                          <i class="fa fa-twitter"></i>
+                                       </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                       <a class="social-icon text-xs-center" target="_blank"
+                                          href="https://www.fiverr.com/share/qb8D02">
+                                          <i class="fa fa-skype"></i>
+                                       </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                       <a class="social-icon text-xs-center" target="_blank"
+                                          href="https://www.fiverr.com/share/qb8D02">
+                                          <i class="fa fa-google"></i>
+                                       </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- ./Team member -->
+               <!-- Team member -->
+               <div class="col-xs-12 col-sm-6 col-md-4">
+                  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                     <div class="mainflip">
+                        <div class="frontside">
+                           <div class="card">
+                              <div class="card-body text-center">
+                                 <p><img class=" img-fluid"
+                                       src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_06.jpg"
+                                       alt="card image"></p>
+                                 <h4 class="card-title">Sunlimetech</h4>
+                                 <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                                 <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i
+                                       class="fa fa-plus"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="backside">
+                           <div class="card">
+                              <div class="card-body text-center mt-4">
+                                 <h4 class="card-title">Sunlimetech</h4>
+                                 <p class="card-text">This is basic card with image on top, title, description and button.This
+                                    is basic card with image on top, title, description and button.This is basic card with
+                                    image on top, title, description and button.</p>
+                                 <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                       <a class="social-icon text-xs-center" target="_blank"
+                                          href="https://www.fiverr.com/share/qb8D02">
+                                          <i class="fa fa-facebook"></i>
+                                       </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                       <a class="social-icon text-xs-center" target="_blank"
+                                          href="https://www.fiverr.com/share/qb8D02">
+                                          <i class="fa fa-twitter"></i>
+                                       </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                       <a class="social-icon text-xs-center" target="_blank"
+                                          href="https://www.fiverr.com/share/qb8D02">
+                                          <i class="fa fa-skype"></i>
+                                       </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                       <a class="social-icon text-xs-center" target="_blank"
+                                          href="https://www.fiverr.com/share/qb8D02">
+                                          <i class="fa fa-google"></i>
+                                       </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- ./Team member -->
+      
+            </div>
+         </div>
+      </section>
+ 
+   </main>
+   <script
+      type="text/javascript">window.$crisp = []; window.CRISP_WEBSITE_ID = "773b152f-5abe-4e87-9a17-b033c971b016"; (function () { d = document; s = d.createElement("script"); s.src = "https://client.crisp.chat/l.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })();</script>
+   <footer>
+<div class="med-footer-bg mt-5">
+   <div class="container">
+      <footer class="py-3">
+         <div class=" border-bottom py-2">
+            <div class="row">
+               <div class="col-lg-2 brandFooter">
+                  <a class="navbar-brand" href="/index.html"><img src="img/LT-navy-blue white.png"
+                        style="height: 20px;" /></a>
+               </div>
+               <div class="col-lg-8">
+                  <ul class="nav justify-content-center mb-3">
+                     <li class="nav-item"><a href="https://crmantra.com/about-us/" class="nav-link px-2 text-light">About Us</a>
+                     </li>
+                     <li class="nav-item"><a href="./termsofService.html" class="nav-link px-2 text-light">Terms &
+                           Conditions</a></li>
+                     <li class="nav-item"><a href="./privacyPolicy.html" class="nav-link px-2 text-light">Privacy
+                           Policy</a></li>
+                     <li class="nav-item"><a href="./contact.html" class="nav-link px-2 text-light">Contact
+                           Us</a></li>
+
+
+                  </ul>
+               </div>
+               <div class="col-lg-2">
+                  <ul class="justify-content-end med-justify-content-center  list-unstyled d-flex">
+                  
+                     <li class="ms-3 social-icons"><a class="text-muted"
+                           href="https://www.linkedin.com/company/crmantra/"><img
+                              src="img/socialIcons/linkedin-in-brands.svg" height="15" /></a></li>
+
+
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <a href="https://crmantra.com/" target="_blank">
+            <p class="text-center text-light text-copyRight  py-4">&copy; 2024 CRMantra Inc</p>
+         </a>
+
+      </footer>
+   </div>
+</div>
+   </footer>
+
+
+
+
+   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="/script.js"></script>
+</body>
+
+</html>
